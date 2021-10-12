@@ -155,6 +155,13 @@ GET   /racer/:id                        controllers.Racer.show(id: String)
 GET   /racer/:id/rematch                controllers.Racer.rematch(id: String)
 POST  /racer/lobby                      controllers.Racer.lobby
 
+# Puzzle Sense
+GET   /sense                            controllers.Sense.home
+POST  /sense                            controllers.Sense.create
+GET   /sense/:id                        controllers.Sense.show(id: String)
+GET   /sense/:id/rematch                controllers.Sense.rematch(id: String)
+POST  /sense/lobby                      controllers.Sense.lobby
+
 # User Analysis
 GET   /analysis/help                   controllers.UserAnalysis.help
 GET   /analysis/*something             controllers.UserAnalysis.parseArg(something: String)

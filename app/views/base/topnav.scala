@@ -42,7 +42,8 @@ object topnav {
           a(href := routes.Puzzle.dashboard(30, "home"))(trans.puzzle.puzzleDashboard()),
           a(href := routes.Puzzle.streak)("Puzzle Streak"),
           a(href := routes.Storm.home)("Puzzle Storm"),
-          a(href := routes.Racer.home)("Puzzle Racer")
+          a(href := routes.Racer.home)("Puzzle Racer"),
+          a(href := routes.Sense.home)("Puzzle Sense")
         )
       ),
       st.section(

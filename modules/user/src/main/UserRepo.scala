@@ -215,6 +215,7 @@ final class UserRepo(val coll: Coll)(implicit ec: scala.concurrent.ExecutionCont
 
   def addStormRun  = addStormLikeRun("storm") _
   def addRacerRun  = addStormLikeRun("racer") _
+  def addSenseRun  = addStormLikeRun("racer") _
   def addStreakRun = addStormLikeRun("streak") _
 
   private def addStormLikeRun(field: String)(userId: User.ID, score: Int): Funit = {

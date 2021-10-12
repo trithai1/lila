@@ -71,6 +71,7 @@ package msg {
 package puzzle {
   case class StormRun(userId: String, score: Int)
   case class RacerRun(userId: String, score: Int)
+  case class SenseRun(userId: String, score: Int)
   case class StreakRun(userId: String, score: Int)
 }
 
