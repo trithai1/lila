@@ -534,18 +534,6 @@ object mon {
       )
     )
   }
-  object sense {
-    private def tpe(lobby: Boolean) = if (lobby) "lobby" else "friend"
-    def race(lobby: Boolean)        = counter("sense.lobby.race").withTag("tpe", tpe(lobby))
-    def players(lobby: Boolean) =
-      histogram("sense.lobby.players").withTag("tpe", tpe(lobby))
-    def score(lobby: Boolean, auth: Boolean) = histogram("sense.player.score").withTags(
-      Map(
-        "tpe"  -> tpe(lobby),
-        "auth" -> auth
-      )
-    )
-  }
   object streak {
     object selector {
       val time                    = timer("streak.selector.time").withoutTags()

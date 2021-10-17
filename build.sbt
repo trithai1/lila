@@ -83,7 +83,7 @@ lazy val racer = module("racer",
 )
 
 lazy val sense = module("sense",
-  Seq(common, memo, hub, puzzle, storm, db, user, pref, tree, room),
+  Seq(common, hub, game, user, notifyModule, evalCache),
   reactivemongo.bundle
 )
 
